@@ -19,7 +19,7 @@ body {
   padding: 0 80px;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 nav {
   padding: 15px 80px !important;
@@ -105,6 +105,53 @@ nav * {
 .service:nth-child(2) .service-image{
      margin-top: 0 !important;
 }
+.footer{
+     background-color:var(--secondary-color);
+     border-top-left-radius: 45px;
+     border-top-right-radius: 45px;
+     padding: 55px 60px 50px !important;
+}
+.social-links i{
+     font-size: 25px;
+}
+.contact h4{
+     background-color: var(--primary-color);
+}
+.subscribe{
+     background-color: #292A32;
+     border-radius: 14px;
+}
+.subscribe input{
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 14px;
+     width: 50%;
+}
+.subscribe button{
+     background-color: var(--primary-color);
+     border: none;
+     border-radius: 14px;
+     width: 50%;
+}
+.subscribe input::placeholder{
+     color: white;
+}
+hr {
+  height: 3px;
+  background-color: #ffffff;
+  border: 0 !important; 
+  outline: 0 !important;
+  opacity: 1 !important;
+}
+.policy{
+     text-decoration: underline;
+}
+.contact>div{
+     width: 50%;
+}
+.mobile-icon{
+     display: none !important;
+}
 @media (max-width: 992px) {
      nav{
           padding: 0 !important;
@@ -156,5 +203,26 @@ nav * {
 }
 .main-service p{
      font-size: 12px;
+}
+footer{
+     padding: 0 !important;
+     width: 100%;
+}
+.contact>div{
+     width: 100% !important;
+}
+.subscribe input{
+     width: 100% !important;
+}
+.subscribe button{
+     width: 100% !important;
+}
+.mobile-icon{
+     display: flex !important;
+     justify-content: center;
+     margin-top: 5%;
+}
+.footer{
+     padding: 50px 0 0 0 !important;
 }
 }
