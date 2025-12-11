@@ -1,37 +1,94 @@
 /* CSS Reset */
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk" !important;
 }
-html,body{
-     width: 100%;
-     height: 100vh;
+html,
+body {
+  width: 100%;
+  height: 100vh;
 }
-:root{
-     --primary-color: #B9FF66;
-     --secondary-color: #191A23;
-     --third-color: #F3F3F3;
+:root {
+  --primary-color: #b9ff66;
+  --secondary-color: #191a23;
+  --third-color: #f3f3f3;
 }
-a{
-     text-decoration: none;
+.padding {
+  padding: 0 80px;
 }
-nav{
-     padding: 15px 80px !important;
+a {
+  text-decoration: none;
 }
-nav *{
-     font-family: 'Space Grotesk' !important;
+nav {
+  padding: 15px 80px !important;
 }
-.navbar-brand{
-     font-weight: 500;
+nav * {
+  font-family: "Space Grotesk" !important;
 }
-
+.navbar-brand {
+  font-weight: 500;
+}
+.hero-section:nth-child(2) {
+  gap: 35px;
+}
+.hero-section:nth-child(2) h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.hero-section:nth-child(2) p {
+  font-size: 20px;
+}
+.hero-section:nth-child(2) button {
+  background-color: var(--secondary-color);
+  padding: 3% 4%;
+  border-radius: 14px !important;
+}
+.hero-section:nth-child(2) div {
+  width: 50%;
+}
+.hero-image h1 {
+  display: none;
+}
+.logos div{
+     width: 50% !important;
+}
 @media (max-width: 992px) {
-     .quote{
-          width: 100% !important;
-          display: block !important;
+     nav{
+          padding: 0 !important;
      }
-     .nav-item{
-          margin: auto !important;
-     }
+  .quote {
+    width: 100% !important;
+    display: block !important;
+  }
+  .nav-item {
+    margin: auto !important;
+  }
+  .hero-section{
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+  }
+  .hero-section h1{
+     font-size: 35px !important;
+  }
+  .hero-section:nth-child(2) div {
+    width: 100%;
+  }
+  .hero-content h1 {
+    display: none;
+  }
+  .hero-image h1 {
+    display: block;
+  }
+  .logos{
+     padding: 0 !important;
+  }
+.logos div{
+     width: 100% !important;
+}
+.logos svg{
+     width: 100% !important;
+     height: 100% !important;
+}
 }
