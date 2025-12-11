@@ -16,3 +16,22 @@ html,body{
 a{
      text-decoration: none;
 }
+nav{
+     padding: 15px 80px !important;
+}
+nav *{
+     font-family: 'Space Grotesk' !important;
+}
+.navbar-brand{
+     font-weight: 500;
+}
+
+@media (max-width: 992px) {
+     .quote{
+          width: 100% !important;
+          display: block !important;
+     }
+     .nav-item{
+          margin: auto !important;
+     }
+}
